@@ -34,7 +34,7 @@ var fbBleepBlorp = new Fizzbuzz('Bleep', 'Blorp');
 // activate first FizzBuzz input area
 document.getElementById("submit").addEventListener("click", function(e) {
   e.preventDefault();
-  fbFizzBuzz.read(parseInt(document.getElementById('number-one').value),parseInt(document.getElementById('number-two').value));
+  fbFizzbuzz.input(parseInt(document.getElementById('number-one').value, parseInt(document.getElementById('number-two').value);
   document.getElementById('number-one').value = "";
   document.getElementById('number-two').value = "";
   write (fbfizzbuzz, (document.getElementById("result-box"));
@@ -49,7 +49,7 @@ document.getElementById("clear").addEventListener("click", function(e) {
 // activate second FizzBuzz input area
 document.getElementById("submitb").addEventListener("click", function(e) {
   e.preventDefault();
-  fbBleepBlorp.read(parseInt(document.getElementById('number-oneb').value), parseInt(document.getElementById('number-twob').value));
+  fbBleepBlorp.input(parseInt(document.getElementById('number-oneb').value), parseInt(document.getElementById('number-twob').value));
   document.getElementById('number-oneb').value = "";
   document.getElementById('number-twob').value = "";
   write (fbBleepBlorp, (document.getElementById("result-boxb"));
