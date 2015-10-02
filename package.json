@@ -1,5 +1,5 @@
 {
-  "name": "fizzbuzz-redux-w5-a2",
+  "name": "sea-d44-fizz-buzz-lcs-2",
   "version": "1.0.0",
   "description": "FEDA Week 5 assignment",
   "main": "main.js",
@@ -8,17 +8,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LyleCharlesScott/fizzbuzz-redux__W5-A2.git"
+    "url": "git+https://github.com/LyleCharlesScott/fizzbuzz-redux__W5-A3.git"
   },
   "author": "Lyle Scott",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LyleCharlesScott/fizzbuzz-redux__W5-A2/issues"
+    "url": "https://github.com/LyleCharlesScott/fizzbuzz-redux__W5-A3/issues"
   },
-  "homepage": "https://github.com/LyleCharlesScott/fizzbuzz-redux__W5-A2#readme",
+  "homepage": "https://github.com/LyleCharlesScott/fizzbuzz-redux__W5-A3.git#readme",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-sass": "^2.0.4",
     "sass": "^0.5.0"
+  },
+  "dependencies": {
+    "sass": "^0.5.0",
+    "gulp-sass": "^2.0.4",
+    "gulp": "^3.9.0"
   }
 }

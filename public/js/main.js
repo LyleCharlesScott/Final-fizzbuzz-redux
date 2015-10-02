@@ -32,3 +32,4 @@ document.getElementById("clearb").addEventListener("click", function(e) {
   e.preventDefault();
   fbBleepBlorp.emptyBox(document.getElementById("result-boxb"));
 });
+

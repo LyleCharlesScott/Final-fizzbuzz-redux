@@ -64,7 +64,8 @@ input {
   background-color: #B2851F;
   border-radius: 20%/50%;
   text-align: center;
-  height: 2em; }
+  height: 2em;
+  outline-style: 1px solid #FFCE5F; }
   input:hover {
     border: 3px solid #FFCE5F; }
   input:focus {
