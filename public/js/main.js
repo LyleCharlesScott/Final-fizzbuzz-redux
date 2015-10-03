@@ -68,9 +68,9 @@ var fizzBuzzFrontEnd = (function() {
     emptyBox(destination);
   }};
 
-  var write = function(instance, destination) {
+  var write = function(instance, destination, firstUserInputNumber, secondUserInputNumber) {
     var fbOutputArray = instance.output();
-    var fbOutputTitle = "Low number: " + "GET THE LOW NUMBER HERE SOMEHOW" + " High number: " + "GET THE HIGH NUMBER HERE SOMEHOW";
+    var fbOutputTitle = "First input: " + firstUserInputNumber + " Second input: " + secondUserInputNumber;
     var fbOutputString = ""; 
     for (var j=0; j < (fbOutputArray.length); j++) {
       fbOutputString += (fbOutputArray[j] + " ");
@@ -95,10 +95,12 @@ var fizzBuzzFrontEnd = (function() {
   // activate first FizzBuzz input area
   document.getElementById("submit").addEventListener("click", function(e) {
     e.preventDefault();
-    fbFizzBuzz.input(parseInt(document.getElementById('number-one').value), parseInt(document.getElementById('number-two').value));
+    var firstUserInputNumber = parseInt(document.getElementById('number-one').value) || 0;
+    var secondUserInputNumber = parseInt(document.getElementById('number-two').value) || 0;
+    fbFizzBuzz.input(firstUserInputNumber, secondUserInputNumber);
     document.getElementById('number-one').value = "";
     document.getElementById('number-two').value = "";
-    write(fbFizzBuzz, document.getElementById("result-box"));
+    write(fbFizzBuzz, document.getElementById("result-box"), firstUserInputNumber, secondUserInputNumber);
     // fbFizzBuzz.write(document.getElementById("result-box"));
   });
 
@@ -110,10 +112,12 @@ var fizzBuzzFrontEnd = (function() {
   // activate second FizzBuzz input area
   document.getElementById("submitb").addEventListener("click", function(e) {
     e.preventDefault();
-    fbBleepBlorp.input(parseInt(document.getElementById('number-oneb').value), parseInt(document.getElementById('number-twob').value));
+    var firstUserInputNumber = parseInt(document.getElementById('number-oneb').value) || 0;
+    var secondUserInputNumber = parseInt(document.getElementById('number-twob').value) || 0;
+    fbBleepBlorp.input(firstUserInputNumber, secondUserInputNumber);
     document.getElementById('number-oneb').value = "";
     document.getElementById('number-twob').value = "";
-    write(fbBleepBlorp, document.getElementById("result-boxb"));
+    write(fbBleepBlorp, document.getElementById("result-boxb"), firstUserInputNumber, secondUserInputNumber);
     // fbBleepBlorp.write(document.getElementById("result-boxb"));
   });
 
