@@ -12,6 +12,18 @@ body {
   @include input-placeholder-color ($color-E);
 }
 
+h1 {
+font-size: 120%;
+} 
+
+h2 {
+  font-size: 100%;
+}
+ 
+p {
+  font-size: 80%;
+}
+
 .FB-game-area, .results {
   border: 3px solid $color-B;
   background-color: $color-C;

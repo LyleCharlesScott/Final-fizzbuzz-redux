@@ -88,9 +88,12 @@ var fizzBuzzFrontEnd = (function() {
     destination.insertBefore(resultSectionOuterBox, destination.firstChild);
   };
 
-  // create two Fizzbuzzes just for sport
+  // create three Fizzbuzzes just for sport
   var fbFizzBuzz = new FizzBuzz();
   var fbBleepBlorp = new FizzBuzz('Bleep', 'Blorp');
+  if (!rollYourOwn) {
+    var rollYourOwn = new FizzBuzz();
+  };
 
   // activate first FizzBuzz input area
   document.getElementById("submit").addEventListener("click", function(e) {
@@ -118,13 +121,34 @@ var fizzBuzzFrontEnd = (function() {
     document.getElementById('number-oneb').value = "";
     document.getElementById('number-twob').value = "";
     write(fbBleepBlorp, document.getElementById("result-boxb"), firstUserInputNumber, secondUserInputNumber);
-    // fbBleepBlorp.write(document.getElementById("result-boxb"));
   });
 
   document.getElementById("clearb").addEventListener("click", function(e) {
     e.preventDefault();
     emptyBox(document.getElementById("result-boxb"));
   });
+
+// activate third FizzBuzz input area
+  document.getElementById("submitc").addEventListener("click", function(e) {
+    e.preventDefault();
+    var firstUserInputNumber = parseInt(document.getElementById('number-onec').value) || 0;
+    var secondUserInputNumber = parseInt(document.getElementById('number-twoc').value) || 0;
+    rollYourOwn.input(firstUserInputNumber, secondUserInputNumber);
+    document.getElementById('number-onec').value = "";
+    document.getElementById('number-twoc').value = "";
+    write(rollYourOwn, document.getElementById("result-boxc"), firstUserInputNumber, secondUserInputNumber);
+  });
+
+  document.getElementById("clearc").addEventListener("click", function(e) {
+    e.preventDefault();
+    emptyBox(document.getElementById("result-boxc"));
+  });
+  // activate roll your own buttons
+  document.getElementById("roll-new").addEventListener("click", function(e) {
+    e.preventDefault();
+    rollYourOwn = new FizzBuzz(document.getElementById('first-word').value || 'pen', document.getElementById('second-word').value || 'island');
+  })
+
   return fizzBuzzFrontEnd;
 })();
 

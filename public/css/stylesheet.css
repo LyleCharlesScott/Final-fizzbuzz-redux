@@ -20,8 +20,8 @@
   @media (min-width: 1024px) {
     .l-FB-game-area {
       margin: 0.5%;
-      min-width: 45%;
-      max-width: 45%; } }
+      min-width: 40%;
+      max-width: 40%; } }
 
 .l-input-area {
   margin: 0.5%; }
@@ -53,6 +53,15 @@ body {
   body input:-ms-input-placeholder {
     color: #FFCE5F; }
 
+h1 {
+  font-size: 120%; }
+
+h2 {
+  font-size: 100%; }
+
+p {
+  font-size: 80%; }
+
 .FB-game-area, .results {
   border: 3px solid #5F93FF;
   background-color: #79A5FF;
@@ -64,8 +73,7 @@ input {
   background-color: #B2851F;
   border-radius: 20%/50%;
   text-align: center;
-  height: 2em;
-  outline-style: 1px solid #FFCE5F; }
+  height: 2em; }
   input:hover {
     border: 3px solid #FFCE5F; }
   input:focus {
