@@ -1,55 +1,3 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-"use strict";
-
-module.exports = (function() {
-  
-  var FizzBuzz = function(Fizz, Buzz) {
-    this.firstFizz = Fizz || 'Fizz';
-    this.secondBuzz = Buzz || 'Buzz';
-  };
-
-  var _calculate = function(min, max, firstFizz, secondBuzz) {
-    var fbOutputArray = [];
-    for (var i = min; i <= max; i++) { 
-      var output = ''; 
-      if (i%3 === 0) { 
-        output += firstFizz; 
-      }
-      if (i%5 === 0) {
-        output += secondBuzz; 
-      }
-      if (output === "") { 
-        output = i; 
-      }
-      fbOutputArray.push(output);
-    }
-    return fbOutputArray;
-  };
-
-  FizzBuzz.prototype.input = function(min, max) {
-    if (!min) {
-      min = 0;
-    }
-    if (!max) {
-      max = 0;
-    }
-    if (min > max) {
-      min = min + max;
-      max = min - max;
-      min = min - max;
-    }
-    this.min = min;
-    this.max = max;
-    this.fbOutputArray = _calculate(min, max, this.firstFizz, this.secondBuzz);
-  };
-
-  FizzBuzz.prototype.output = function() {
-    return this.fbOutputArray;
-  };
-
-  return FizzBuzz;
-})();
-},{}],2:[function(require,module,exports){
 "use strict";
 
 var FizzBuzz = require ('sea-d44-fizz-buzz-ls');
@@ -65,7 +13,7 @@ var fizzBuzzFrontEnd = (function() {
   var emptyBox = function(destination) {
     if (destination.hasChildNodes()) {
     destination.removeChild(destination.childNodes[0]);
-    emptyBox(destination);
+    _clear(destination);
   }};
 
   var write = function(instance, destination) {
@@ -95,7 +43,7 @@ var fizzBuzzFrontEnd = (function() {
   // activate first FizzBuzz input area
   document.getElementById("submit").addEventListener("click", function(e) {
     e.preventDefault();
-    fbFizzBuzz.input(parseInt(document.getElementById('number-one').value), parseInt(document.getElementById('number-two').value));
+    fbFizzbuzz.input(parseInt(document.getElementById('number-one').value), parseInt(document.getElementById('number-two').value));
     document.getElementById('number-one').value = "";
     document.getElementById('number-two').value = "";
     write(fbFizzBuzz, document.getElementById("result-box"));
@@ -104,7 +52,7 @@ var fizzBuzzFrontEnd = (function() {
 
   document.getElementById("clear").addEventListener("click", function(e) {
     e.preventDefault();
-    emptyBox(document.getElementById("result-box"));
+    fbFizzBuzz.emptyBox(document.getElementById("result-box"));
   });
 
   // activate second FizzBuzz input area
@@ -119,9 +67,7 @@ var fizzBuzzFrontEnd = (function() {
 
   document.getElementById("clearb").addEventListener("click", function(e) {
     e.preventDefault();
-    emptyBox(document.getElementById("result-boxb"));
+    fbBleepBlorp.emptyBox(document.getElementById("result-boxb"));
   });
   return fizzBuzzFrontEnd;
 })();
-
-},{"sea-d44-fizz-buzz-ls":1}]},{},[2]);
