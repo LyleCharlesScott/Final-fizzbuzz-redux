@@ -137,6 +137,8 @@ var fizzBuzzFrontEnd = (function() {
     document.getElementById('number-onec').value = "";
     document.getElementById('number-twoc').value = "";
     write(rollYourOwn, document.getElementById("result-boxc"), firstUserInputNumber, secondUserInputNumber);
+    document.getElementById('first-word').className = '';
+    document.getElementById('second-word').className ='';
   });
 
   document.getElementById("clearc").addEventListener("click", function(e) {
@@ -144,9 +146,11 @@ var fizzBuzzFrontEnd = (function() {
     emptyBox(document.getElementById("result-boxc"));
   });
   // activate roll your own buttons
-  document.getElementById("roll-new").addEventListener("click", function(e) {
+  document.getElementById('roll-new').addEventListener('click', function(e) {
     e.preventDefault();
     rollYourOwn = new FizzBuzz(document.getElementById('first-word').value || 'pen', document.getElementById('second-word').value || 'island');
+    document.getElementById('first-word').classList.add('clicked');
+    document.getElementById('second-word').classList.add('clicked');
   })
 
   return fizzBuzzFrontEnd;

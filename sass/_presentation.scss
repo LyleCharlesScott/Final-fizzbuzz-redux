@@ -23,6 +23,7 @@ input {
   color: $color-E;
   background-color: $color-D;
   border-radius: 20%/50%;
+  transition: border-color 1s;
   text-align: center;
   height: 2em;
   width: 40%;
@@ -32,6 +33,7 @@ input {
   &:focus {
     color: $color-E;
     border: 3px solid $color-E;
+    outline: none;
   }
 }
 
@@ -45,9 +47,11 @@ button {
   border: 3px solid $color-A;
   color: $color-C;
   border-radius: 20%/50%;
+  transition: background-color 1s;
   &:hover, &:focus {
     background-color: $color-C;
     color: $color-A;
+    outline: none;
   }
   &:active {
     border: 2px solid $color-E;
@@ -59,4 +63,9 @@ button {
   border: $color-B;
   border-top: 3px solid $color-D;
   padding: 0.5%;
+}
+
+.clicked {
+  transition: border-color 1s;
+  border: 3px solid $color-E;
 }

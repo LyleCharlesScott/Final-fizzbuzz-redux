@@ -115,6 +115,7 @@ input {
   color: #FFCE5F;
   background-color: #B2851F;
   border-radius: 20%/50%;
+  transition: border-color 1s;
   text-align: center;
   height: 2em;
   width: 40%; }
@@ -122,7 +123,8 @@ input {
     border: 3px solid #FFCE5F; }
   input:focus {
     color: #FFCE5F;
-    border: 3px solid #FFCE5F; }
+    border: 3px solid #FFCE5F;
+    outline: none; }
 
 option {
   background-color: #315BB2;
@@ -132,10 +134,12 @@ button {
   background-color: #315BB2;
   border: 3px solid #315BB2;
   color: #79A5FF;
-  border-radius: 20%/50%; }
+  border-radius: 20%/50%;
+  transition: background-color 1s; }
   button:hover, button:focus {
     background-color: #79A5FF;
-    color: #315BB2; }
+    color: #315BB2;
+    outline: none; }
   button:active {
     border: 2px solid #FFCE5F; }
 
@@ -144,3 +148,7 @@ button {
   border: #5F93FF;
   border-top: 3px solid #B2851F;
   padding: 0.5%; }
+
+.clicked {
+  transition: border-color 1s;
+  border: 3px solid #FFCE5F; }
