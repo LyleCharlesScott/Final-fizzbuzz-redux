@@ -90,65 +90,65 @@ p {
   margin-top: 0; }
 
 body {
-  background-color: #315BB2;
+  background-color: #034133;
   font-family: Helvetica, sans-serif;
-  color: #FFCE5F;
+  color: #EEF2F5;
   box-sizing: border-box; }
   body input::-webkit-input-placeholder {
-    color: #FFCE5F; }
+    color: #EEF2F5; }
   body input:-moz-placeholder {
     /* Firefox 18- */
-    color: #FFCE5F; }
+    color: #EEF2F5; }
   body input::-moz-placeholder {
     /* Firefox 19+ */
-    color: #FFCE5F; }
+    color: #EEF2F5; }
   body input:-ms-input-placeholder {
-    color: #FFCE5F; }
+    color: #EEF2F5; }
 
 .FB-game-area, .results {
-  border: 3px solid #5F93FF;
-  background-color: #79A5FF;
+  border: 3px solid #015C42;
+  background-color: #138B5E;
   border-radius: 1%; }
 
 input {
-  border: 3px solid #B2851F;
-  color: #FFCE5F;
-  background-color: #B2851F;
+  border: 3px solid #002427;
+  color: #EEF2F5;
+  background-color: #002427;
   border-radius: 20%/50%;
   transition: border-color 1s;
   text-align: center;
   height: 2em;
   width: 40%; }
   input:hover {
-    border: 3px solid #FFCE5F; }
+    border: 3px solid #EEF2F5; }
   input:focus {
-    color: #FFCE5F;
-    border: 3px solid #FFCE5F;
+    color: #EEF2F5;
+    border: 3px solid #EEF2F5;
     outline: none; }
 
 option {
-  background-color: #315BB2;
-  color: #FFCE5F; }
+  background-color: #034133;
+  color: #EEF2F5; }
 
 button {
-  background-color: #315BB2;
-  border: 3px solid #315BB2;
-  color: #79A5FF;
+  background-color: #034133;
+  border: 3px solid #034133;
+  color: #138B5E;
   border-radius: 20%/50%;
   transition: background-color 1s; }
   button:hover, button:focus {
-    background-color: #79A5FF;
-    color: #315BB2;
+    background-color: #138B5E;
+    color: #034133;
     outline: none; }
   button:active {
-    border: 2px solid #FFCE5F; }
+    border: 2px solid #EEF2F5; }
 
 .output {
-  background-color: #315BB2;
-  border: #5F93FF;
-  border-top: 3px solid #B2851F;
+  background-color: #034133;
+  border: #015C42;
+  border-top: 3px solid #002427;
   padding: 0.5%; }
 
 .clicked {
   transition: border-color 1s;
-  border: 3px solid #FFCE5F; }
+  border: 3px solid #EEF2F5; }
