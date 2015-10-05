@@ -1,32 +1,90 @@
+header {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+} 
+
+h2 {
+  font-size: 1.5em;
+  margin: 0;
+}
+ 
+p {
+  font-size: 1em;
+}
+
 .l-FB {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  max-width: 1024px;
   margin: auto;
-  @media (min-width: 1024px) {
+  @media (min-width: 850px) {
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 }
 
 .l-FB-game-area {
   position: relative;
-  margin: 2%;
+  margin: 2% auto 2% auto;
   min-width: 95%;
   max-width: 95%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  @media (min-width: 1024px) {
-    margin: 0.5%;
+  h1 {
+    font-size: 2em;
+  }
+  @media (min-width: 435px) {
+    min-width: 50%;
+    max-width: 75%;
+  }
+  @media (min-width: 850px) {
     min-width: 40%;
     max-width: 40%;
+  }
+  @media (min-width: 1200px) {
+    margin: 0.25%;
+    min-width: 32%;
+    max-width: 32%;
   }
 }
 
 .l-input-area {
+  margin: 0.25%;
+}
+
+.l-all-inputs {
+  display: flex;
+  flex-direction: column;
   margin: 0.5%;
+  @media (min-width: 435px) {
+    flex-direction: row;
+  }
+  @media (min-width: 850px) {
+    flex-direction: column;
+  }
+  @media (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+.l-text-inputs {
+  margin: 1%;
+}
+
+.l-buttons {
+  margin: 1%;
+  width: 50%;
 }
 
 .l-results {
@@ -35,6 +93,9 @@
   justify-content: flex-start;
   margin: 2% auto 2% auto;
   width: 90%;
+  h1 {
+  font-size: 1em;
+  }
 }
 
 .l-output {

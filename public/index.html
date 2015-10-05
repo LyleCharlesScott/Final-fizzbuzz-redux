@@ -20,10 +20,16 @@
         </header>
         <form class="input-area l-input-area">
           <h2>Enter two numbers</h2>
-          <input type="text" id="number-one" placeholder="First number" tabindex="2"></input>
-          <input type="text" id="number-two" placeholder="Second number" tabindex="3"></input>
-          <button type="submit" id="submit" tabindex="4">Submit</button>
-          <button type="submit" id="clear" tabindex="5">Clear</button>
+          <div class="l-all-inputs">
+            <div class="l-text-inputs">
+              <input type="text" id="number-one" placeholder="First number" tabindex="2"></input>
+              <input type="text" id="number-two" placeholder="Second number" tabindex="3"></input>
+            </div>
+            <div class="l-buttons">
+              <button type="submit" id="submit" tabindex="4">Submit</button>
+              <button type="submit" id="clear" tabindex="5">Clear</button>
+            </div>
+          </div>
         </form>
         <section class="results l-results">
           <header>
@@ -38,10 +44,16 @@
         </header>
         <form class="input-area l-input-area">
           <h2>Enter two numbers</h2>
-          <input type="text" id="number-oneb" placeholder="First number" tabindex="6"></input>
-          <input type="text" id="number-twob" placeholder="Second number" tabindex="7"></input>
-          <button type="submit" id="submitb" tabindex="8">Submit</button>
-          <button type="submit" id="clearb" tabindex="9">Clear</button>
+          <div class="l-all-inputs">
+            <div class="l-text-inputs">
+              <input type="text" id="number-oneb" placeholder="First number" tabindex="6"></input>
+              <input type="text" id="number-twob" placeholder="Second number" tabindex="7"></input>
+            </div>
+            <div class="l-buttons">
+              <button type="submit" id="submitb" tabindex="8">Submit</button>
+              <button type="submit" id="clearb" tabindex="9">Clear</button>
+            </div>
+          </div>
         </form>
         <section class="results l-results">
           <header>
@@ -56,20 +68,32 @@
         </header>
         <form id="roll-your-own" class="input-area l-input-area">
           <h2>Enter two words</h2>
-          <input type="text" id="first-word" placeholder="???" tabindex="10"></input>
-          <input type="text" id="second-word" placeholder="???" tabindex="11"></input>
-          <button type="submit" id="roll-new" tabindex="12">Submit</button>
+          <div class="l-all-inputs">
+            <div class="l-text-inputs">
+              <input type="text" id="first-word" placeholder="???" tabindex="10"></input>
+              <input type="text" id="second-word" placeholder="???" tabindex="11"></input>
+            </div>
+            <div class="l-buttons">
+              <button type="submit" id="roll-new" tabindex="12">Submit</button>
+            </div>
+          </div>
           <h2>Enter two numbers</h2>
-          <input type="text" id="number-onec" placeholder="First number" tabindex="13"></input>
-          <input type="text" id="number-twoc" placeholder="Second number" tabindex="14"></input>
-          <button type="submit" id="submitc" tabindex="15">Submit</button>
-          <button type="submit" id="clearc" tabindex="16">Clear</button>
+          <div class="l-all-inputs">
+            <div class="l-text-inputs">
+              <input type="text" id="number-onec" placeholder="First number" tabindex="13"></input>
+              <input type="text" id="number-twoc" placeholder="Second number" tabindex="14"></input>
+            </div>
+            <div class="l-buttons">
+              <button type="submit" id="submitc" tabindex="15">Submit</button>
+              <button type="submit" id="clearc" tabindex="16">Clear</button>
+            </div>
+          </div>
         </form>
         <section class="results l-results">
           <header>
             <h1 id="final-results">Results of Whatever this is:</h1>
           </header>
-          <div id="result-boxc"></div>
+          <div id="result-boxc" tabindex="12"></div>
         </section>
       </section>
       <script type="text/javascript" src="js/main.js"></script>
