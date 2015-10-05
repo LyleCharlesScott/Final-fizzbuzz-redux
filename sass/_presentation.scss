@@ -66,6 +66,6 @@ button {
 }
 
 .clicked {
-  transition: border-color 1s;
   border: 3px solid $color-E;
+  transition: border-color 1s;
 }

@@ -150,5 +150,5 @@ button {
   padding: 0.5%; }
 
 .clicked {
-  transition: border-color 1s;
-  border: 3px solid #EEF2F5; }
+  border: 3px solid #EEF2F5;
+  transition: border-color 1s; }

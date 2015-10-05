@@ -143,6 +143,8 @@ var fizzBuzzFrontEnd = (function() {
 
   document.getElementById("clearc").addEventListener("click", function(e) {
     e.preventDefault();
+    document.getElementById('first-word').className = '';
+    document.getElementById('second-word').className ='';
     emptyBox(document.getElementById("result-boxc"));
   });
   // activate roll your own buttons
