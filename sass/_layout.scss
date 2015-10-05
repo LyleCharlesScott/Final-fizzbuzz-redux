@@ -23,7 +23,7 @@ p {
   justify-content: center;
   align-items: flex-start;
   margin: auto;
-  @media (min-width: 850px) {
+  @media (min-width: 650px) {
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -44,13 +44,13 @@ p {
   h1 {
     font-size: 2em;
   }
-  @media (min-width: 435px) {
-    min-width: 50%;
+  @media (min-width: 600px) {
+    min-width: 75%;
     max-width: 75%;
   }
-  @media (min-width: 850px) {
-    min-width: 40%;
-    max-width: 40%;
+  @media (min-width: 676px) {
+    min-width: 47%;
+    max-width: 47%;
   }
   @media (min-width: 1200px) {
     margin: 0.25%;

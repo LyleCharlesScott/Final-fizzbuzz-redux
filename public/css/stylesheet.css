@@ -19,7 +19,7 @@ p {
   justify-content: center;
   align-items: flex-start;
   margin: auto; }
-  @media (min-width: 850px) {
+  @media (min-width: 650px) {
     .l-FB {
       flex-direction: row;
       flex-wrap: wrap; } }
@@ -38,14 +38,14 @@ p {
   justify-content: flex-start; }
   .l-FB-game-area h1 {
     font-size: 2em; }
-  @media (min-width: 435px) {
+  @media (min-width: 600px) {
     .l-FB-game-area {
-      min-width: 50%;
+      min-width: 75%;
       max-width: 75%; } }
-  @media (min-width: 850px) {
+  @media (min-width: 676px) {
     .l-FB-game-area {
-      min-width: 40%;
-      max-width: 40%; } }
+      min-width: 47%;
+      max-width: 47%; } }
   @media (min-width: 1200px) {
     .l-FB-game-area {
       margin: 0.25%;
