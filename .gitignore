@@ -25,6 +25,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-css
-node_modules
+/public/css
+/node_modules
 
